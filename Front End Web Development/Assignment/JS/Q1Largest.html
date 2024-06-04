@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function largest(n1,n2,n3){
+            var n1=parseInt(document.getElementById("n1").value);
+            var n2=parseInt(document.getElementById("n2").value);
+            var n3=parseInt(document.getElementById("n3").value);
+            if(n1>n2){
+                if(n1>n3){
+                    document.getElementById("mydiv").innerHTML="Largest Number:"+n1;
+                }
+            }
+            else if(n2>n3){
+                    document.getElementById("mydiv").innerHTML=" Largest Number:"+n2;
+            }
+            else{
+                document.getElementById("mydiv").innerHTML=" Largest Number:"+n3;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <!--Write a program to accept three positive numbers and output the largest of them.-->
+
+    <form>
+        Input1: <input type="text" name="n1" id="n1" placeholder="enter num 1" >
+        <br>
+        Input2: <input type="text" name="n2" id="n2" placeholder="enter num 2">
+        <br>
+        Input3: <input type="text" name="n3" id="n3" placeholder="enter num 3">  
+        <br> 
+        <button type="button" name="Large" id="Large" value="Large" onclick="largest()">find Largest</button>
+    </form>
+    <div id="mydiv"></div>
+</body>
+</html>
